@@ -1,0 +1,126 @@
+body {
+    background: rgb(76, 89, 105);
+}
+
+.logo {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+   width: 400px;
+   align-self: flex-end;
+}
+.logo img:hover {
+    background-color: teal;
+    animation-name: rotateLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateLogo {
+    from { transform:rotate(0deg); }
+    50% { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+button {
+    padding: 0.25rem;
+    box-shadow: 0.2em 0.3em rgba(0, 0, 0, 0.568);
+    font-weight:400;
+    border: none;
+}
+
+a:hover {
+    color:brown;
+}
+
+a:visited {
+    background-color:yellow;
+}
+
+
+.buttons a:hover {
+    color:brown;
+}
+
+.buttons a:visited {
+    background-color:yellow;
+}
+
+
+
+.buttons {
+    margin: 2rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+
+.button1:hover {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    50% { transform: scale(0.75); }
+    to { transform: scale(1); }
+}
+
+
+.button2:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from { transform:rotateZ(0deg); }
+    50% { transform: rotateZ(100deg); }
+    to { transform: rotateZ(0deg); }
+}
+  
+
+.button3:hover {
+    animation-name: skew;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skew {
+    from { transform: skewY(0deg); }
+    50% { transform: skewY(180deg); }
+    to { transform: skewY(0deg) }
+}
+  
+
+.button4:hover {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes fade {
+    from { transform:rotateX(0deg); }
+    50% { transform: rotateX(360deg); }
+    to { transform: rotateX(0deg); }
+}
+
+
+.buttons button:active {
+    background-color: teal;
+    color:yellowgreen;
+}
+
+/* I think it won't show visited because it's kept on my local pc so the session is not saved? */
+.buttons button:visited {
+    background-color: #333;
+    color:#000;
+}
+
+ 
